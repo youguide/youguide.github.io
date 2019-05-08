@@ -1,2 +1,0 @@
-# youguide.github.io
-socool
