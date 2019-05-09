@@ -10,19 +10,46 @@
 			margin: 0;
 		}
 		@media (max-width: 1499px){
+           @font-face{
+                font-family: Milkshake ;
+                src: url(Font/16647.otf);
+            }
+           @font-face{
+                font-family: SFNS Display ;
+                src: url(Font/.ttf);
+            }
 			body {
 				background-image: url(Images/pc4.jpg); background-size: cover;
 			}
             .menu{
             	width: 100%;
-            	height: 150px;
+            	height: 130px;
             	background-color: #00000085;
             }
-
-
+            .menu1{
+            	width: 100%;
+            	height: 45px;
+            	border-bottom: 1px solid grey;
+            }
+            .menu p {
+            	font-family: SFNS Display ;
+            }
+            .icon{
+            	width: 23px;
+            	margin-left: 100px;
+            	margin-top: 12px;
+            }
+            .menu1item li{
+            	list-style-type: none;
+                float: left;
+            }
 
 		}
 		@media (max-width: 720px){
+			    @font-face{
+                font-family: SFNS Display ;
+                src: url(Font/9651.ttf);
+            }
 			body {
 				background-image: url(Images/.jpg); background-size: cover;
 			}
@@ -36,10 +63,17 @@
 <body>
 	<div class="menu">
 		<div class="menu1">
-			
+            <ul class="menu1item">
+			<li><img class="icon" src="Images/phone.png"></li>
+			<li><p style="color: white; font-size: 17px; margin-top: 12px; margin-left: 10px;">+380502477348</p></li>
+			<li><img style="margin-left: 10px;" class="icon" src="Images/envelope.png"></li>
+			<li><p style="color: white; font-size: 17px; margin-top: 12px; margin-left: 10px;">wadimsuperstar@gmail.com</p></li>
+			</ul>
 		</div>
 		<div class="menu2">
-			
+			<ul>
+				<li><p style="font-family: Milkshake;">wefewefewf</p></li>
+			</ul>
 		</div>
 	</div>
 </body>
