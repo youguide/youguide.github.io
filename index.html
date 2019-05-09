@@ -5,19 +5,19 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>youguide</title>
 	<style type="text/css">
+		@font-face{
+            font-family: Milkshake ;
+            src: url(Font/16647.otf);
+            }
+           @font-face{
+            font-family: SFNS Display ;
+            src: url(Font/9651.ttf);
+            }
 		*{
 			padding: 0;
 			margin: 0;
 		}
 		@media (max-width: 1499px){
-           @font-face{
-                font-family: Milkshake ;
-                src: url(Font/16647.otf);
-            }
-           @font-face{
-                font-family: SFNS Display ;
-                src: url(Font/.ttf);
-            }
 			body {
 				background-image: url(Images/pc4.jpg); background-size: cover;
 			}
@@ -39,22 +39,60 @@
             	margin-left: 100px;
             	margin-top: 12px;
             }
+            .icon2{
+            	width: 50px;
+            	margin-left: 100px;
+            	margin-top: 15px;
+            }
             .menu1item li{
             	list-style-type: none;
                 float: left;
             }
+            .menu2 ul li{
+            	float: left;
+            	list-style-type: none;
+            }
+            .name{
+                color: white; 
+                font-size: 50px;
+                margin-left: 10px;
+            }
+            .topmenu{
+            	margin-right: 200px;
+            	float: right;
+            	color: white;
+            	font-family: SFNS Display ;
+            	list-style-type: none;
+            	font-size: 25px;
+            }
+            .topmenu li{
+            	margin-right: 20px;
+            	margin-left: 20px;
+            	margin-top: 20px;
+            }
+            .topmenu li a:hover{
+            	transition: 0.2s;
+                color: #ff4e00;
+                border-bottom: 1px solid #ff4e00;
+                border-top: 1px solid #ff4e00; 
+            }
+
 
 		}
 		@media (max-width: 720px){
-			    @font-face{
-                font-family: SFNS Display ;
-                src: url(Font/9651.ttf);
-            }
 			body {
-				background-image: url(Images/.jpg); background-size: cover;
+				background-image: url(Images/mob2.jpg); background-size: cover;	
 			}
-
-
+            .icon{
+            	width: 23px;
+            	margin-left: 15px;
+            	margin-top: 12px;
+            }
+            .icon2{
+            	width: 50px;
+            	margin-left: 20px;
+            	margin-top: 15px;
+            }
 
 
 		}
@@ -66,15 +104,25 @@
             <ul class="menu1item">
 			<li><img class="icon" src="Images/phone.png"></li>
 			<li><p style="color: white; font-size: 17px; margin-top: 12px; margin-left: 10px;">+380502477348</p></li>
-			<li><img style="margin-left: 10px;" class="icon" src="Images/envelope.png"></li>
+			<li><img style="margin-left: 20px;" class="icon" src="Images/envelope.png"></li>
 			<li><p style="color: white; font-size: 17px; margin-top: 12px; margin-left: 10px;">wadimsuperstar@gmail.com</p></li>
 			</ul>
 		</div>
 		<div class="menu2">
 			<ul>
-				<li><p style="font-family: Milkshake;">wefewefewf</p></li>
+				<li><img class="icon2" src="Images/airplane-shape.png"></li>
+				<li><p class="name" style="font-family: Milkshake;">Tourizto</p></li>
+				<ul class="topmenu">
+					<li><a>Главная</a></li>
+					<li><a>Туры</a></li>
+					<li><a>Отели</a></li>
+					<li><a>О нас</a></li>
+					<li><a>Наша команда</a></li>
+				</ul>
 			</ul>
 		</div>
 	</div>
 </body>
 </html>
+<!-- цвета оранж #ff4e00
+цвет зеленый #01cd74 -->
