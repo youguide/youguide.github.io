@@ -13,13 +13,19 @@
             font-family: SFNS Display ;
             src: url(Font/9651.ttf);
             }
+            @font-face{
+            font-family: PF BeauSans Pro ;
+            src: url(Font/14213.ttf);
+            }
 		*{
 			padding: 0;
 			margin: 0;
 		}
 		@media (max-width: 1499px){
 			body {
-				background-image: url(Images/pc4.jpg); background-size: cover;
+				background-image: url(Images/pc4.jpg);
+			    background-size: contain; ;
+			    background-repeat: no-repeat;
 			}
             .menu{
             	width: 100%;
@@ -53,12 +59,12 @@
             	list-style-type: none;
             }
             .name{
-                color: white; 
+                color: #ff4e00; 
                 font-size: 50px;
                 margin-left: 10px;
             }
             .topmenu{
-            	margin-right: 200px;
+            	margin-right: auto;
             	float: right;
             	color: white;
             	font-family: SFNS Display ;
@@ -68,20 +74,46 @@
             .topmenu li{
             	margin-right: 20px;
             	margin-left: 20px;
-            	margin-top: 20px;
+            	/*margin-top: 20px;*/
+            }
+            .topmenu li a{
+            	display: block;
+            	line-height: 30px;
             }
             .topmenu li a:hover{
-            	transition: 0.2s;
+            	transition: 0.3s;
                 color: #ff4e00;
-                border-bottom: 1px solid #ff4e00;
-                border-top: 1px solid #ff4e00; 
+                border-bottom: 2px solid #ff4e00;
+                /*border-top: 1px solid #ff4e00; */
             }
+            .topmenu li a:not(hover){
+            	color: white;
+            	transition: 0.3s;
+            }
+            .slogan{
+            	font-size: 40px;
+            	font-family: PF BeauSans Pro;
+            	color: white;
+            	font-weight: bolder;
+            	margin-left: 30px;
+            	margin-right: 100px;
+            	margin-top: 100px;
+            }
+            .div1{
+            	height: 700px;
+            	width: 100%;
+            	background-color: white;
+            	margin-top: 350px;
+            }
+                
 
 
 		}
 		@media (max-width: 720px){
 			body {
-				background-image: url(Images/mob2.jpg); background-size: cover;	
+				background-image: url(Images/mob2.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;	
 			}
             .icon{
             	width: 21px;
@@ -89,11 +121,14 @@
             	margin-top: 12px;
             }
             .icon2{
-            	width: 50px;
+            	width: 40px;
             	margin-left: 10px;
-            	margin-top: 15px;
+            	margin-top: 18px;
             }
-
+            .name{
+            	font-size: 45px ;
+            	margin-top: 4px;
+            }
 
 		}
 	</style>  
@@ -113,14 +148,18 @@
 				<li><img class="icon2" src="Images/airplane-shape.png"></li>
 				<li><p class="name" style="font-family: Milkshake;">Tourizto</p></li>
 				<ul class="topmenu">
-					<li><a>Главная</a></li>
-					<li><a>Туры</a></li>
-					<li><a>Отели</a></li>
-					<li><a>О нас</a></li>
-					<li><a>Наша команда</a></li>
+					<li><a style="line-height: 82px;">Главная</a></li>
+					<li><a style="line-height: 82px;">Туры</a></li>
+					<li><a style="line-height: 82px;">Отели</a></li>
+					<li><a style="line-height: 82px;">О нас</a></li>
+					<li><a style="line-height: 82px;">Наша команда</a></li>
 				</ul>
 			</ul>
 		</div>
+	</div>
+	<h1 class="slogan">Всё, что вам нужно - это солнечные очки. Ну, а об остальном мы позаботимся!</h1>
+	<div class="div1">
+		
 	</div>
 </body>
 </html>
