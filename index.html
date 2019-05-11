@@ -105,7 +105,9 @@
             	background-color: white;
             	margin-top: 350px;
             }
-                
+            .mobmenu{
+            	display: none;
+            }
 
 
 		}
@@ -130,28 +132,33 @@
             	margin-top: 4px;
             }
             .topmenu{
-            	width: 100%;
-            	z-index: 1;
-            	left: -200%;
+            	display: none;
+            }
+            .mobmenu{
+            	left: -100%;
             	position: fixed;
-            	text-align: center;
-            	margin-top: 80px;
+            	display: block;
             }
-            .topmenu li{
-            	width: 100%;
+            
+
+
+            .button{
+            	margin-top: 20px;
+            	margin-right: 20px;
             }
-            .slogan:hover .topmenu{
-            	transition: 1s;
-                left: 200%;
-                z-index: 1;
-                position: fixed;
-            	text-align: center;
+            .button p{
+            	font-size: 35px;
+            	font-weight: bold;
+            	color: white;
+            	margin-top: -2px;
             }
-
-
-
-
-
+            .button img{
+            	margin-left: 10px;
+            	width: 40px;
+            }
+            .button p,img{
+            	float: right;
+            }
 
 		}
 	</style>  
@@ -170,6 +177,7 @@
 			<ul>
 				<li><img class="icon2" src="Images/airplane-shape.png"></li>
 				<li><p class="name" style="font-family: Milkshake;">Tourizto</p></li>
+				<li style="float: right;"><div class="button"><img src="Images/menu.png"><p>Menu</p></div></li>
 				<ul class="topmenu">
 					<li><a style="line-height: 82px;">Главная</a></li>
 					<li><a style="line-height: 82px;">Туры</a></li>
@@ -181,6 +189,13 @@
 		</div>
 	</div>
 	<h1 class="slogan">Всё, что вам нужно - это солнечные очки. Ну, а об остальном мы позаботимся!</h1>
+	<ul class="mobmenu">
+		<li><a style="line-height: 80px;">Главная</a></li>
+		<li><a style="line-height: 80px;">Туры</a></li>
+		<li><a style="line-height: 80px;">Отели</a></li>
+		<li><a style="line-height: 80px;">О нас</a></li>
+		<li><a style="line-height: 80px;">Наша команда</a></li>
+	</ul>
 	<div class="div1">
 		
 	</div>
