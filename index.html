@@ -24,182 +24,148 @@
 		@media (max-width: 1499px){
 			body {
 				background-image: url(Images/pc4.jpg);
-			    background-size: contain; ;
+			    background-size: cover; 
 			    background-repeat: no-repeat;
-			}
+		}
             .menu{
             	width: 100%;
             	height: 130px;
             	background-color: #00000085;
             }
-            .menu1{
-            	width: 100%;
-            	height: 45px;
-            	border-bottom: 1px solid grey;
-            }
-            .menu p {
+            .topmenu p{
             	font-family: SFNS Display ;
-            }
-            .icon{
-            	width: 23px;
-            	margin-left: 100px;
-            	margin-top: 12px;
-            }
-            .icon2{
-            	width: 50px;
-            	margin-left: 100px;
-            	margin-top: 15px;
-            }
-            .menu1item li{
-            	list-style-type: none;
-                float: left;
-            }
-            .menu2 ul li{
-            	float: left;
-            	list-style-type: none;
-            }
-            .name{
-                color: white; 
-                font-size: 50px;
-                margin-left: 10px;
+            	color: white;
+            	float: left; 
+            	font-size: 17px;
+            	margin-top: 11px;
+            	margin-left: 10px; 
             }
             .topmenu{
-            	margin-right: auto;
-            	float: right;
-            	color: white;
-            	font-family: SFNS Display ;
-            	list-style-type: none;
-            	font-size: 25px;
+                width: 100%;
+                height: 35%;
+                border-bottom: 1px solid grey;
             }
-            .topmenu li{
-            	margin-right: 20px;
+            .icon1, .icon2{
+            	float: left;
+            	width: 25px;
+            	margin-top: 10px;
+            	margin-left:  20px;
+            }
+            .logo{
+            	float: left;
+            	width: 40px;
+            	margin-top: 20px;
             	margin-left: 20px;
-            	/*margin-top: 20px;*/
             }
-            .topmenu li a{
-            	display: block;
-            	line-height: 30px;
-            }
-            .topmenu li a:hover{
-            	transition: 0.3s;
-                color: #ff4e00;
-                border-bottom: 2px solid #ff4e00;
-                /*border-top: 1px solid #ff4e00; */
-            }
-            .topmenu li a:not(hover){
+            .mainmenu div p{
+            	margin-left: 10px;
+            	margin-top: 7px ;
+            	float: left;
             	color: white;
-            	transition: 0.3s;
+            	font-size: 45px;
+            	font-family: Milkshake;
             }
-            .slogan{
-            	font-size: 40px;
-            	font-family: PF BeauSans Pro;
+            .mainmenu ul li{
+            	margin-right: 25px;
+            	margin-top: 20px ;
+            	float: right;
+            	list-style-type: none;
+            }
+            .mainmenu ul li a{
+            	font-family: SFNS Display;
+            	font-size: 25px;
             	color: white;
-            	font-weight: bolder;
-            	margin-left: 30px;
-            	margin-right: 100px;
-            	margin-top: 100px;
+            	text-decoration: none;
             }
-            .div1{
-            	height: 700px;
-            	width: 100%;
-            	background-color: white;
-            	margin-top: 350px;
-            }
-            .mobmenu{
+            .hamburger{
             	display: none;
             }
 
 
-		}
+
+
 		@media (max-width: 720px){
 			body {
 				background-image: url(Images/mob2.jpg);
-				background-size: contain;
+				background-size: cover;
 				background-repeat: no-repeat;	
 			}
-            .icon{
-            	width: 21px;
-            	margin-left: 5px;
-            	margin-top: 12px;
-            }
-            .icon2{
-            	width: 35px;
-            	margin-left: 10px;
-            	margin-top: 20px;
-            }
-            .name{
-            	font-size: 35px ;
-            	margin-top: 10px;
-            }
-            .topmenu{
-            	display: none;
-            }
-            .mobmenu{
-            	left: -100%;
-            	position: fixed;
+            .hamburger{
             	display: block;
             }
-            
-
-
-            .button{
-            	margin-top: 20px;
-            	margin-right: 20px;
-            }
-            .button p{
-            	font-size: 25px;
-            	font-weight: bold;
-            	color: white;
-            	margin-top: ;
-            }
-            .button img{
-            	margin-top: 2px;
-            	margin-left: 10px;
-            	width: 30px;
-            }
-            .button p,img{
+            .hamburger img{
+            	width: 25px;
             	float: right;
             }
+            .mobmenu{
+            	width: 400px;
+            	z-index: 1;
+            	transition: 0.4s;
+            	text-align: center;
+            	margin-left: -400px;
+            	margin-top: 80px;
+            	position: fixed;
+            	float: none;
+
+            }
+            .mobmenu li{
+            	position: relative;
+            	width: 100%;
+            }
+            ul.open{
+            	z-index: 1;
+            	margin-left: 0px;
+            }
+
+
 
 		}
 	</style>  
 </head>
 <body>
 	<div class="menu">
-		<div class="menu1">
-            <ul class="menu1item">
-			<li><img class="icon" src="Images/phone.png"></li>
-			<li><p style="color: white; font-size: 15px; margin-top: 14px; margin-left: 10px;">380502477348</p></li>
-			<li><img style="margin-left: 15px;" class="icon" src="Images/envelope.png"></li>
-			<li><p style="color: white; font-size: 17px; margin-top: 11px; margin-left: 10px;">Tourizto@gmail.com</p></li>
-			</ul>
+		<div class="topmenu">
+			<img class="icon1" src="Images/phone.png">
+			<p>+380502477348</p>
+			<img class="icon2" src="Images/envelope.png">
+			<p>Tourizto@gmail.com</p>
 		</div>
-		<div class="menu2">
-			<ul>
-				<li><img class="icon2" src="Images/airplane-shape.png"></li>
-				<li><p class="name" style="font-family: Milkshake;">Tourizto</p></li>
-				<li style="float: right;"><div class="button"><img src="Images/menu.png"><p>Menu</p></div></li>
-				<ul class="topmenu">
-					<li><a style="line-height: 82px;">Главная</a></li>
-					<li><a style="line-height: 82px;">Туры</a></li>
-					<li><a style="line-height: 82px;">Отели</a></li>
-					<li><a style="line-height: 82px;">О нас</a></li>
-					<li><a style="line-height: 82px;">Наша команда</a></li>
-				</ul>
+		<nav class="mainmenu">
+			<div>
+				<img class="logo" src="Images/airplane.png">
+				<p>Tourizto</p>
+			</div>
+			<ul class="mobmenu">
+				<li><a>Главная</a></li>
+				<li><a>Туры</a></li>
+				<li><a>Отели</a></li>
+				<li><a>О нас</a></li>
+				<li><a>Наша команда</a></li>
 			</ul>
-		</div>
+			<div onclick="toggleMenu();" class="hamburger">
+				<img src="Images/menu.png">
+				<p style="float: right; font-family: SFNS Display; font-weight: bolder; font-size: 30px;">Menu</p>
+			</div>
+		</nav>
 	</div>
-	<h1 class="slogan">Всё, что вам нужно - это солнечные очки. Ну, а об остальном мы позаботимся!</h1>
-	<ul class="mobmenu">
-		<li><a style="line-height: 80px;">Главная</a></li>
-		<li><a style="line-height: 80px;">Туры</a></li>
-		<li><a style="line-height: 80px;">Отели</a></li>
-		<li><a style="line-height: 80px;">О нас</a></li>
-		<li><a style="line-height: 80px;">Наша команда</a></li>
-	</ul>
-	<div class="div1">
-		
-	</div>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+	let menu = document.getElementsByClassName('menu')[0];
+	function toggleMenu() {
+		if (menu.className === "menu") {
+			menu.className += " open";
+		} 
+		else {
+			menu.className = "menu";
+		}
+	}
+</script>
 </body>
 </html>
 <!-- цвета оранж #ff4e00
