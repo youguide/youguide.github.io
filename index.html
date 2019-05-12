@@ -96,14 +96,18 @@
             .hamburger img{
             	width: 25px;
             	float: right;
+            	margin-right: 15px;
+            	width: 30px;
+            	margin-top: 20px;
             }
             .mobmenu{
-            	width: 400px;
+            	background-color: #00000085 ;
+            	width: 100%;
             	z-index: 1;
             	transition: 0.4s;
             	text-align: center;
-            	margin-left: -400px;
-            	margin-top: 80px;
+            	margin-left: -100%;
+            	margin-top: 83px;
             	position: fixed;
             	float: none;
 
@@ -111,6 +115,7 @@
             .mobmenu li{
             	position: relative;
             	width: 100%;
+            	height: 75px;
             }
             ul.open{
             	z-index: 1;
@@ -156,13 +161,13 @@
 
 
 	<script type="text/javascript">
-	let menu = document.getElementsByClassName('menu')[0];
+	let mobmenu = document.getElementsByClassName('mobmenu')[0];
 	function toggleMenu() {
-		if (menu.className === "menu") {
-			menu.className += " open";
+		if (mobmenu.className === "mobmenu") {
+			mobmenu.className += " open";
 		} 
 		else {
-			menu.className = "menu";
+			mobmenu.className = "mobmenu";
 		}
 	}
 </script>
